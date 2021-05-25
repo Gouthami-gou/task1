@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            border: 1px solid red;
+            color: red;
+        }
+
+        .success {
+            border: 1px solid yellowgreen;
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Factset1</p>
+    <p>Factset2</p>
+    <p>Factset3</p>
+    <div>
+        <p>Factset4</p>
+    </div>
+    <script>
+        var b1 = document.querySelectorAll('p');
+        b1.forEach(function (v, c) {
+            console.log(v, c);
+            v.classList.add('success');
+        });
+
+    </script>
+
+</body>
+
+</html>
